@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body {
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	flex: 1 100%;
+	text-align: center;
+	background: #ebebeb;
+	box-shadow: 2px 2px 5px #404040;
+}
+.user_list {
+	width: 30vh;
+	height: 100vh;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user_button {
+	width: 200px;
+	height: 40px;
+	margin: 10px 0;
+	color: #434343;
+	outline: 2px solid #434343;
+	border: none;
+	text-transform: uppercase;
+	box-shadow: 2px 2px 5px #404040;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.selected {
+	background-color: #d3cfcf;
+}
+.posts_list,
+.noUserSelected {
+	width: 70vh;
+	height: 100vh;
+	padding-left: 20px;
+	padding-top: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post {
+	margin-bottom: 5px;
+	border-bottom: 1px solid lightgray;
+}
+
+.noUserSelected {
+	padding-top: 100px;
+	color: lightgray;
+}
+
+.error {
+	width: 500px;
+	height: 100px;
+	background-color: lightpink;
+	color: red;
+	text-align: center;
+	margin: 100px auto;
 }
